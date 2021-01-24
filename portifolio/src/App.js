@@ -17,6 +17,7 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 const ImgProject = styled.img`
   height: 400px;
   @media (max-width: 650px) {
+    flex-direction: column;
     width: 100%;
     height: 200px;
   }
@@ -24,15 +25,23 @@ const ImgProject = styled.img`
 
 const ImgProjectFooter = styled.img`
   height: 300px;
-  @media (max-width: 650px) {
+  @media (max-width: 700px) {
     width: 100%;
     height: 200px;
   }
 `
 
+const ImgExperiencias = styled.img`
+  height: 300px;
+  @media (max-width: 700px) {
+    margin-left: 0px;
+    width: 100%;
+  }
+`
+
 const ImgProjectEducation = styled.img`
   height: 300px;
-  @media (max-width: 650px) {
+  @media (max-width: 700px) {
     width: 100%;
     height: 200px;
   }
@@ -40,7 +49,7 @@ const ImgProjectEducation = styled.img`
 
 const ImgCode = styled.img`
   height: 200px;
-  @media (max-width: 650px) {
+  @media (max-width: 700px) {
     width: 100%;
     height: 200px;
   }
@@ -49,7 +58,7 @@ const ImgCode = styled.img`
 const ImgAvar = styled.img`
   height: 200px;
   width: 500px;
-  @media (max-width: 650px) {
+  @media (max-width: 700px) {
     width: 100%;
     height: 200px;
   }
@@ -86,7 +95,7 @@ export default function App() {
               Meu nome é Carolaine, tenho 23 anos, me formei a pouco tempo em Sistema de informação pela Unisales.
               Moro no estado do Espirito Santo, em Vitória.
               Minha carreira em tecnologia começou a muitos anos atrás, mas só enxerguei que era isso que queria para minha vida quando
-              ingressei na faculdade, no ano de 2016. Desde então, fiz vários estágios na área de tecnologia, margitoriamente em Suporte.
+              ingressei na faculdade, no ano de 2016. Desde então, fiz vários estágios na área de tecnologia, a maioria em Suporte a clientes.
               Tentei ingressar em alguns estágios na área de desenvolvimento, mas os requisitos eram muito maiores do que fato eu vinha aprendendo.
               A faculdade me ajudou a ter uma noção de lógica, e vi linguagens como: Java, PHP, e bastante de C.
               Como a faculdade apenas me deu o caminho das pedras para o desenvolvimento, estou atualmente me especializando na Labenu,
@@ -121,8 +130,8 @@ export default function App() {
         </div>
         <div className="formacoe1">
           <ol>
-            <li><h2>Bacharel em Sistema da informacao</h2></li>
-            <li><h2>Certificacao Scrum Foundation</h2></li>
+            <li><h2>Bacharel em Sistema da informação</h2></li>
+            <li><h2>Certificacao em Scrum Foundation</h2></li>
             <li><h2>Web Full Stack na Labenu - Em curso</h2></li>
             <li><h2>Inglês avançado</h2></li>
           </ol>
@@ -132,26 +141,26 @@ export default function App() {
       </div>
 
       <div className="experiencias">
-        <ImgProjectFooter src={Working} />
+        <ImgExperiencias src={Working} />
         <div className="card">
           <Experiencias
             cargo={'Estágiaria'}
             empresa={'Alta Rail Technology'}
-            descricao={'Pesquisa de erros no sistema de logs do controle ferroviário da empresa, atualizações em banco de dados, envio de relatórios de SLA para a diretoria, experiência no time de Qualidade (testes) de software, usando a ferramenta test-link para testar componentes do sistema.'}
+            descricao={'Pesquisa de erros no sistema de logs do controle ferroviário da empresa; atualizações em banco de dados; envio de relatórios de SLA para a diretoria; experiência no time de Qualidade (testes) de software, utilizando a ferramenta test-link para testar componentes do sistema.'}
           />
         </div>
         <div className="card">
           <Experiencias
             cargo={'Estágiaria'}
             empresa={'Time-Now Engenharia SA'}
-            descricao={'Geração de querys em SQL atendendo ou apoiando demandas de RM; preparação de máquinas para contrato de clientes externos; geração ou busca de alguma informação dentro do RM totvs; cotação de máquinas e requisitos para envio nos contratos; soluções para chamados abertos de usuário; soluções em acesso remoto a usuários a distância; busca de ferramentas para atendimento a alguma solicitação e melhoria no processo da empresa; mapeamento em fluxogramas para documentar todos os processos de TI dentro da empresa;'}
+            descricao={'Geração de querys em SQL atendendo ou apoiando demandas de RM; preparação de máquinas para contrato de clientes externos; geração ou busca de alguma informação dentro do RM totvs; cotação de máquinas e requisitos para envio aos clientes; soluções para chamados abertos de usuário; soluções em acesso remoto a usuários a distância; busca de ferramentas para atendimento a alguma solicitação e melhoria no processo da empresa; mapeamento em fluxogramas para documentar todos os processos de TI dentro da empresa;'}
           />
         </div>
         <div className="card">
           <Experiencias
             cargo={'Analisa de processos JR'}
             empresa={'Nexa Tecnologia'}
-            descricao={'Experiência no processo de Report, utilizando query para abordagens no banco de dados da Vale; experiência no processo como gestora por um período em Asset Management, atuando no gerenciamento de todos os ativos da Vale Brasil e Vale mundo; experiência no processo de Knowledge Management, atuando na base de conhecimento de artigos de conhecimento; experiência no processo de Configuration Management na parte de networking de Acess Point, Roteadores, UPS, Switch da Vale Brasil e Vale mundo.'}
+            descricao={'Experiência no processo de Report, utilizando query para abordagens no banco de dados da Vale; experiência no processo de Asset Management, atuando no gerenciamento dos ativos da Vale Brasil e Vale mundo; experiência no processo de Knowledge Management, atuando na base de conhecimento de artigos de conhecimento; experiência no processo de Configuration Management na parte de networking de Acess Point, Roteadores, UPS, Switch da Vale.'}
           />
         </div>
 
@@ -167,8 +176,8 @@ export default function App() {
         <div ref={myRefProjetos} className="projetos-intro">
           <div className="intro">
             <h1>Projetos</h1>
-            <h2>Estou me desenvolvimento ao longo da minha carreira e aprendendo mais e mais.</h2>
-            <LinearProgress /><LinearProgress color="secondary" />
+            <h2>Estou me desenvolvendo.</h2>
+            <LinearProgress/><LinearProgress color="secondary" />
             <br />
           </div>
           <ImgCode src={Code} />
@@ -207,7 +216,7 @@ export default function App() {
         <div ref={myRefContato} className="footer">
           <ImgProjectFooter src={Dinheiro} />
           <h1>Contrate-me</h1>
-          <p>Procuro uma oportunidade onde eu possa iniciar minha carreira em desenvolvimento.</p>
+          <p>Procuro uma oportunidade onde possa iniciar minha carreira em desenvolvimento.</p>
           <p>Email para contato: carolsantos14@hotmail.com</p>
           <p>Telefone: (27) 995086910</p>
           <p>Tipo de contrato: PJ e CLT</p>
