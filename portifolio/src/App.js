@@ -17,41 +17,47 @@ import LinearProgress from '@material-ui/core/LinearProgress';
 const ImgProject = styled.img`
   height: 400px;
   @media (max-width: 650px) {
-    flex-direction: column;
-    width: 100%;
-    height: 200px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    text-align: center;
   }
 `
 
 const ImgProjectFooter = styled.img`
   height: 300px;
   @media (max-width: 700px) {
-    width: 100%;
-    height: 200px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    text-align: center;
   }
 `
 
 const ImgExperiencias = styled.img`
   height: 300px;
   @media (max-width: 700px) {
-    margin-left: 0px;
-    width: 100%;
+    object-fit: cover;
+    text-align: center;
   }
 `
 
 const ImgProjectEducation = styled.img`
   height: 300px;
   @media (max-width: 700px) {
-    width: 100%;
-    height: 200px;
+    height: 100px;
+    object-fit: cover;
+    text-align: center;
   }
 `
 
 const ImgCode = styled.img`
   height: 200px;
   @media (max-width: 700px) {
-    width: 100%;
-    height: 200px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    text-align: center;
   }
 `
 
