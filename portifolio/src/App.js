@@ -65,8 +65,23 @@ const ImgAvar = styled.img`
   height: 200px;
   width: 500px;
   @media (max-width: 700px) {
-    width: 100%;
-    height: 200px;
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    height: 50px;
+  }
+`
+
+const ImgIcones = styled.div`
+    background-color: black;
+
+@media (max-width: 700px) {
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    background-color: black;
   }
 `
 
@@ -183,7 +198,7 @@ export default function App() {
           <div className="intro">
             <h1>Projetos</h1>
             <h2>Estou me desenvolvendo.</h2>
-            <LinearProgress/><LinearProgress color="secondary" />
+            <LinearProgress /><LinearProgress color="secondary" />
             <br />
           </div>
           <ImgCode src={Code} />
@@ -227,17 +242,17 @@ export default function App() {
           <p>Telefone: (27) 995086910</p>
           <p>Tipo de contrato: PJ e CLT</p>
 
-          <a href="https://github.com/carolaine-viana/meus-projetos">
-            <img src="https://img.icons8.com/clouds/80/000000/github.png" />
-          </a>
-
-          <a href="https://www.linkedin.com/in/carolaineviana/">
-            <img src="https://img.icons8.com/clouds/80/000000/linkedin.png" />
-          </a>
-
-          <a href="https://api.whatsapp.com/send?phone=5527995086910&text=Estive no seu portfólio!">
-            <img src="https://img.icons8.com/clouds/80/000000/whatsapp.png" />
-          </a>
+          <ImgIcones>
+            <a href="https://github.com/carolaine-viana/meus-projetos">
+              <img src="https://img.icons8.com/clouds/80/000000/github.png" />
+            </a>
+            <a href="https://www.linkedin.com/in/carolaineviana/">
+              <img src="https://img.icons8.com/clouds/80/000000/linkedin.png" />
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5527995086910&text=Estive no seu portfólio!">
+              <img src="https://img.icons8.com/clouds/80/000000/whatsapp.png" />
+            </a>
+          </ImgIcones>
 
         </div>
 
