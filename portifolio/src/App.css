@@ -154,4 +154,88 @@ body{
   width: 100%;
 }
 
+/************ responsivo ******************** */
+
+@media (max-width: 650px) {
+  .cabecalho {
+    display: none;
+  }
+  .daniel-foto {
+    display: none;
+  }
+  .sobre-mim-text {
+    display: none;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .projetos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .cardProjetos{
+    width: 100%;
+  }
+
+  /* .container-azul-escuro-text {
+    display: flex;
+    width: 100vw;
+  }
+  .container-azul-escuro {
+    display: flex;
+    height: 780px;
+  }
+  .container-azul-claro {
+    height: 700px;
+  }
+  .container-metade {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  /* .container-beje {
+    height: 750px;
+  }
+
+  .projeto-text {
+    width: 100%;
+  }
+
+  .container-vermelho {
+    width: 100%;
+    height: 550px;
+  }
+
+  .eu-sou-daniel {
+    display: none;
+  }
+  .container-foto {
+    height: 150px;
+  }
+  .container-logo {
+    display: none;
+  }
+  .sobre-mim-text {
+    margin-top: 30px;
+  } */
+}
+@media (max-width: 1200px) {
+  .sobre-mim-text {
+    width: 100%;
+  }
+  .sobre-mim-text {
+    display: none;
+  }
+  
+}
 
