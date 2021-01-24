@@ -13,6 +13,7 @@ import Graduacao from '../src/imagens/graduacao.png'
 import Working from '../src/imagens/working.png'
 import Code from '../src/imagens/code.png'
 import LinearProgress from '@material-ui/core/LinearProgress';
+import Avatar from '../src/imagens/avatar.jpeg'
 
 const ImgProject = styled.img`
   height: 400px;
@@ -62,26 +63,20 @@ const ImgCode = styled.img`
 `
 
 const ImgAvar = styled.img`
-  height: 200px;
-  width: 500px;
+  border-radius: 100%;
   @media (max-width: 700px) {
-    display: flex;
-    flex-direction: row;
-    width: 50px;
-    height: 50px;
+    display: none;
   }
 `
 
 const ImgIcones = styled.div`
-    background-color: black;
-
 @media (max-width: 700px) {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 50px;
     height: 50px;
     margin-top: 50px;
-    background-color: black;
   }
 `
 
@@ -97,7 +92,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <header className="cabecalho">
+      <header className="cabecalho"> 
         <div>
         </div>
 
@@ -110,6 +105,7 @@ export default function App() {
 
       <div className="sobre-mim">
         <h1>Carolaine Viana</h1>
+        <ImgAvar src={Avatar}/>
         <h2>Fullstack Web Developer</h2>
         <p ref={myRefQuemSou} className="sobre-mim-text">
           <h1>Sobre mim</h1>

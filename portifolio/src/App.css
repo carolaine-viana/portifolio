@@ -15,12 +15,14 @@ body{
   background-color: #212121;
   color: white;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .cabecalho-links{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  cursor: pointer;
 }
 
 .cabecalho-links > p {
@@ -151,8 +153,6 @@ body{
 }
 
 
-
-
 /************ responsivo ******************** */
 
 @media (max-width: 650px) {
@@ -190,10 +190,9 @@ body{
 
   .cardProjetos{
     width: 100%;
-  }
-
-  
+  }  
 }
+
 @media (max-width: 1200px) {
   .sobre-mim-text {
     width: 100%;
